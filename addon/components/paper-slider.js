@@ -109,6 +109,7 @@ export default BaseFocusable.extend(EventsMixin, FlexMixin, ColorMixin, {
     this.set('active', false);
     this.set('dragging', false);
     this.endPropertyChanges();
+    this.setValueFromEvent(event);
   },
 
   move(event) {
@@ -116,7 +117,7 @@ export default BaseFocusable.extend(EventsMixin, FlexMixin, ColorMixin, {
       return;
     }
 
-    this.setValueFromEvent(event);
+    // this.setValueFromEvent(event);
 
   },
 
